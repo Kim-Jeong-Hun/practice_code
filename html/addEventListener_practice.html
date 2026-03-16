@@ -15,10 +15,12 @@
     <script>
         // document 객체에서 clicker라는 이름의 id를 찾아 clicker라는 변수에 할당
         // getElementById() 메소드가 document 객체의 메소드였구나..
+        // -> DOM 객체 다 까먹음.. 다시 공부 필요
         const clicker = document.getElementById("clicker");
         
         // clicker dom요소 변수에 이벤트 추가
         // addEventListener() 의 매개변수는 첫 번째가 행위, 두 번째가 이벤트에 추가할 함수구나
+        // -> 
         clicker.addEventListener("mouseover", showButton);
         
         function showButton() {

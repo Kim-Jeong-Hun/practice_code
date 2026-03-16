@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 폼 요소 복습-->
+    <!-- 옛날 form 태그 사용 시, get과 post만 사용 가능 
+        따라서 현대 웹에서는 put과 delete를 하기 위해
+        FetchAPI나 Axios를 이용해서 http요청을 구현한 함수를
+        이벤트 리스너 함수 등록하는 방식 사용 
+    -->
+    <form name="searchForm"
+        action="https://search.naver.com/search.naver"
+        method="get">
+        <input type="text" name="query">
+        <input type="submit" value="검색">
+    </form>
+</body>
+</html>
