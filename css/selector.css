@@ -25,11 +25,15 @@ input[type=text] {
 
 /* 가상 클래스 셀렉터 */
 /* 이벤트가 발생했을 때 적용되게 하는 css */
-/* 가장 자주 사용되는 것은 visited와 hover정도 */
+/* 가장 자주 사용되는 것은 visited와 hover, nth-child 정도 */
 a:visited {
     color: green;
 }
 
 button:hover {
     background: yellowgreen;
+}
+
+p:nth-child(1) {
+    font-size: 3em;
 }
