@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- datalist태그와 select태그의 차이 -->
+    <!-- datalist태그는 input태그가 필요하며, 옵션 리스트에서 선택하거나 입력창에 직접 입력하여 항목 선택 가능
+     select는 옵션 리스트에서만 선택 가능 -->
+    <label for="countries_datalist">나라(datalist) : </label>
+    <input type="text" list="countries_datalist" />
+    <datalist id="countries_datalist">
+      <option>대한민국</option>
+      <option>일본</option>
+      <option>중국</option>
+      <option>미국</option>
+    </datalist>
+    <hr />
+    <label for="countries_select">나라(select) : </label>
+    <select id="countries_select">
+      <option>대한민국</option>
+      <option>일본</option>
+      <option>중국</option>
+      <option>미국</option>
+    </select>
+  </body>
+</html>
