@@ -1,0 +1,9 @@
+/* 폰트에 관련된 스타일들 */
+p {
+    font-family:'Courier New', Courier, monospace;
+    /* em : 현재 크기의 배수 (3em = 3배) */
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+
+}

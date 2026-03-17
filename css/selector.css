@@ -1,0 +1,35 @@
+/* 전체 셀렉터 */
+* {
+    color: green;
+}
+
+/* 태그 이름 셀렉터 */
+h1, ul, li {
+    background-color: green;
+}
+
+/* class 셀렉터 */
+.container {
+    background-color: #FFFFFF;
+}
+
+/* id 셀렉터 */
+#color_button {
+    border-radius : 2px;
+}
+
+/* 속성 셀렉터 */
+input[type=text] {
+    border-color: blue;
+}
+
+/* 가상 클래스 셀렉터 */
+/* 이벤트가 발생했을 때 적용되게 하는 css */
+/* 가장 자주 사용되는 것은 visited와 hover정도 */
+a:visited {
+    color: green;
+}
+
+button:hover {
+    background: yellowgreen;
+}
