@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="img" src="/public/apple.jpg" alt="사과" width="100" height="80" onload="onloadListener()"/>
+  </body>
+  <script>
+    const image = document.getElementById("img");
+
+    const onloadListener = (e) => {
+      if(image.src.includes("apple.jpg")) {
+        image.src = "/public/banana.jpg";
+        image.alt = "바나나";
+        image.width = "80";
+        image.height = "100";
+      } else {
+        image.src = "/public/apple.jpg";
+        image.alt = "사과";
+        image.width = "100";
+        image.height = "80";
+      }
+    };
+  </script>
+</html>

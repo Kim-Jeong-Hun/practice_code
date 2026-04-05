@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마우스 클릭 연습</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td {
+        border: 1px solid black;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body onload="onloadListener()">
+    <h3><b>마우스 클릭 연습</b></h3>
+    <hr />
+    <table onclick="onclickListener()"></table>
+  </body>
+  <script>
+    const table = document.querySelector("table");
+
+    const appendTable = (e) => {
+      for (let i = 0; i < 10; i++) {
+        const tr = document.createElement("tr");
+        table.appendChild(tr);
+        for (let j = 0; j < 10; j++) {
+          const td = document.createElement("td");
+          tr.appendChild(td);
+          const img = document.createElement("img");
+          img.src = "";
+          td.appendChild(img);
+        }
+      }
+    };
+    appendTable();
+
+    // img 태그 중 하나를 랜덤으로 골라 이미지를 띄우기
+    const onloadListener = (e) => {
+      const images = document.querySelectorAll("img");
+      let randomNumber = Math.floor(Math.random() * 100);
+      images[randomNumber].src = "/public/apple.jpg";
+      images[randomNumber].width = "48";
+      images[randomNumber].height = "48";
+    };
+
+    // 다른 img 태그에 이미지를 띄우고 원래 img 태그의 src 없애기
+    const onclickListener = (e) => {
+      const images = document.querySelectorAll("img");
+      for (let i = 0; i < images.length; i++) {
+        images[i].src = "";
+        images[i].width = "";
+        images[i].height = "";
+      }
+      let randomNumber = Math.floor(Math.random() * 100);
+      images[randomNumber].src = "/public/apple.jpg";
+      images[randomNumber].width = "48";
+      images[randomNumber].height = "48";
+    };
+  </script>
+</html>
